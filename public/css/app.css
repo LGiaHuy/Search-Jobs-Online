@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+}
+.object-fit-cover {
+    object-fit: cover !important;
+}
+.object-fit-contain {
+    object-fit: contain !important;
+}
+.job-title {
+    font-family: "Dancing Script", sans-serif;
+    color: #2196f3;
+}
+a {
+    text-decoration: none;
+}
+.fs-lg {
+    font-size: 50px;
+}
+.fs-md {
+    font-size: 30px;
+}
+.padding-y-lg {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.bg-card {
+    background-color: rgb(239, 245, 255);
+    border: 1px solid rgb(160, 193, 255);
+    transition: all 0.1s linear;
+    border-radius: 12px;
+}
+.bg-tags {
+    background: rgb(230, 239, 255);
+}
+.bg-card:hover {
+    background-color: rgb(249, 251, 255);
+}
+.btn-orange {
+    background-color: rgb(255, 125, 85);
+    color: #fff;
+}
+.btn-orange:hover {
+    filter: brightness(110%);
+    color: #fff;
+}
+.banner-bg {
+    background: linear-gradient(
+        270deg,
+        rgb(0, 90, 255) 0%,
+        rgb(0, 23, 68) 100%
+    );
+}
+.outline-none {
+    outline: none;
+}
+.text-xs {
+    font-size: 12px;
+}
+.text-sm {
+    font-size: 16px;
+}
+.mt-lg {
+    margin-top: 50px;
+}
+.link-fixed {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 99;
+}
+a.link:hover {
+    opacity: 0.8;
+}
+a.tag-hover:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.bg-gradient-blue {
+    background: rgb(63, 81, 181);
+    background: linear-gradient(
+        90deg,
+        rgba(63, 81, 181, 1) 0%,
+        rgba(26, 151, 194, 1) 35%,
+        rgba(0, 202, 255, 1) 100%
+    );
+}
+.text-limit-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+/* filter city */
+.cityContainer {
+    cursor: pointer;
+}
+.cityBox {
+    z-index: 99;
+    margin-top: 20px;
+    width: 250px;
+    max-height: 300px;
+    background: #fff;
+    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+}
+.cityBox.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.15s linear;
+}
+.cityBox.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* width */
+.cityBox::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.cityBox::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #eee;
+}
+
+/* Handle */
+.cityBox::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+/* Blur all page */
+.blur-all {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 90;
+}
+.blur-all.hidden {
+    display: none;
+}
+.blur-all.active {
+    display: block;
+}
+/* Filter */
+.filter-heading {
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+}
+/* range filter */
+.range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 100px;
+    z-index: 10;
+}
+.range-flow {
+    width: 0%;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    border-radius: 100px;
+    z-index: 9;
+}
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.range-tooltip {
+    position: absolute;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    color: #fff;
+    font-size: 16px;
+    background-color: #000;
+    text-align: center;
+    line-height: 30px;
+}
+.range-tooltip::after {
+    content: "";
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 15px solid #000;
+    bottom: -9px;
+    left: 3px;
+}
+@media only screen and (min-width: 960px) {
+    .w-lg-full {
+        width: 100% !important;
+    }
+}

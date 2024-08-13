@@ -1,0 +1,59 @@
+.nav_userBg {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px 0;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #ccc;
+    transition: all 0.1s linear;
+}
+.nav_userBg:hover {
+    border: 1px solid #fff;
+}
+.nav_userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.nav_userAvatar img {
+    border-radius: 50%;
+}
+.nav_dropUser {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    padding: 12px 0px;
+    border-radius: 8px;
+    transition: all 0.15s ease-in;
+}
+.nav_dropUser_header {
+    padding: 0 14px;
+}
+.nav_userInfo {
+    font-size: 14px;
+    font-weight: 400;
+}
+.nav_userInfoList__Item {
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+.nav_userInfoList__Item a {
+    display: block;
+}
+.nav_userInfoList__Item:hover a {
+    color: #2196f3 !important;
+}
+.nav_userInfoList__Item:hover button {
+    color: #2196f3 !important;
+}
+.nav_containerUser:hover > .nav_dropUser {
+    opacity: 1;
+    visibility: visible;
+}
